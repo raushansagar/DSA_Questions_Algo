@@ -1,21 +1,24 @@
- 
-// Leetcode 53
-// Maximum Subarray
 
+// Leetcode 53
+// Link :- https://leetcode.com/problems/maximum-subarray/
+// Time Complexity is O(n)
+// Tiem Complexity is O(1)
 
 class Solution {
     public int maxSubArray(int[] nums) {
         int n = nums.length;
-        int currSum = 0;
-        int maxSubArraySum = Integer.MIN_VALUE;
+        int sum = 0;
+        int maxSum = Integer.MIN_VALUE;
 
         for(int i = 0; i < n; i++){
-            currSum += nums[i];
-            maxSubArraySum = Math.max(maxSubArraySum, currSum);
+            sum += nums[i];
 
-            if(currSum < 0) currSum = 0;
+            maxSum = Math.max(maxSum, sum);
+            if(sum < 0){
+                sum = 0;
+            }
         }
 
-        return maxSubArraySum;
+        return maxSum;
     }
 }
