@@ -2,6 +2,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "LinkedList",
+      "request": "launch",
+      "mainClass": "LinkedList.LinkedList",
+      "projectName": "DSA_Questions_Algo_e0ceb120"
+    },
+    {
+      "type": "java",
+      "name": "LinkedList",
+      "request": "launch",
+      "mainClass": "LinkedLIst.LinkedList",
+      "projectName": "DSA_Questions_Algo_e0ceb120"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "lldb",
       "request": "launch",
