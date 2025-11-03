@@ -43,6 +43,7 @@ public class LinkedList {
         }
 
         Head = Head.next;
+        size--;
     }
 
     // add last 
