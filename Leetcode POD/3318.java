@@ -36,7 +36,6 @@ class Solution {
         int[] result = new int[n-k+1];
 
         // Time Complexity  O(n * k log(k))
-
         int i = 0, j = 0;
         while(i < n){
             map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
